@@ -7,30 +7,31 @@ body {
     color: #999999;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 2vw;
-    font-size: 1.5vw; /* Adjusts based on viewport width */
+    padding: 20px;
+    font-size: 14px; /* Use fixed size for compatibility */
 }
 .logo {
-    padding: 0 0 2vw 0;
+    padding: 0 0 12px 0;
     width: 50%;
-    max-width: 300px; /* Ensures it doesn't get too large */
+    max-width: 300px;
     height: auto;
 }
 .block {
     width: 90%;
-    padding: 2vw;
-    margin: 0 0 2vw 0;
+    max-width: 800px;
+    padding: 12px;
+    margin: 0 0 10px 0;
     background: url(block_bg.png);
 }
 h1 {
-    font-size: 2vw; /* Adjusts based on viewport width */
+    font-size: 18px; /* Use fixed size for compatibility */
     color: #4bb7b9;
-    margin: 0 0 1vw 0;
+    margin: 0 0 8px 0;
     padding: 0;
 }
 ul {
     margin: 0;
-    padding: 0 0 0 3vw;
+    padding: 0 0 0 15px;
 }
 li {
     margin: 0;
@@ -38,14 +39,14 @@ li {
 }
 @media (max-width: 768px) {
     body {
-        padding: 4vw;
-        font-size: 3vw; /* Larger text for smaller screens */
+        padding: 10px;
+        font-size: 12px; /* Smaller text for smaller screens */
     }
     .block {
-        padding: 4vw;
+        padding: 10px;
     }
     h1 {
-        font-size: 4vw; /* Larger headings for smaller screens */
+        font-size: 16px; /* Smaller headings for smaller screens */
     }
 }
 </style>
@@ -74,3 +75,4 @@ li {
 </div>
 </body>
 </html>
+
