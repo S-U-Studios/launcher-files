@@ -7,39 +7,52 @@ body {
     color: #999999;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
-    font-size: 12pt;
+    padding: 2vw;
+    font-size: 1.5vw; /* Adjusts based on viewport width */
 }
 .logo {
-    padding: 0 0 12px 0;
+    padding: 0 0 2vw 0;
     width: 50%;
+    max-width: 300px; /* Ensures it doesn't get too large */
     height: auto;
 }
 .block {
     width: 90%;
-    padding: 12px;
-    margin: 0 0 10px 0;
+    padding: 2vw;
+    margin: 0 0 2vw 0;
     background: url(block_bg.png);
 }
 h1 {
-    font-size: 100%;
+    font-size: 2vw; /* Adjusts based on viewport width */
     color: #4bb7b9;
-    margin: 0 0 8px 0;
+    margin: 0 0 1vw 0;
     padding: 0;
 }
 ul {
     margin: 0;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 3vw;
 }
 li {
     margin: 0;
     padding: 0;
 }
+@media (max-width: 768px) {
+    body {
+        padding: 4vw;
+        font-size: 3vw; /* Larger text for smaller screens */
+    }
+    .block {
+        padding: 4vw;
+    }
+    h1 {
+        font-size: 4vw; /* Larger headings for smaller screens */
+    }
+}
 </style>
 </head>
 <body>
 <div class="logo">
-    <img src="logo.png">
+    <img src="logo.png" alt="Logo">
 </div>
 
 <div class="block">
